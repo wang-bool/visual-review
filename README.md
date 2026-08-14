@@ -1,3 +1,5 @@
+<div align="right"><b>中文</b> | <a href="README.en.md">English</a></div>
+
 # visual-review
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -96,6 +98,9 @@ visual-review/
 │   └── cordis.patch.yml.example  # 手动安装时追加到 cordis.patch.yml 的片段
 ├── examples/
 │   └── test_image.png            # 测试图片
+├── assets/
+│   ├── qr-official-account.jpg   # 公众号二维码
+│   └── qr-group.png              # 交流群二维码
 ├── package.json                  # 插件清单（exports host/client 双入口）
 ├── README.md / README.en.md      # 中文 / English 文档
 ├── LICENSE                       # MIT
@@ -251,3 +256,19 @@ printf '{"id":1,"kind":"describe","image_b64":"%s","prompt":"请描述这张图�
 ## License
 
 [MIT](LICENSE) © visual-review authors
+
+---
+
+## 联系我们
+
+欢迎关注公众号、加入交流群，获取最新动态、使用反馈与开源讨论：
+
+<div align="center">
+
+| 公众号 · 关注获取最新动态 | 交流群 · 入群交流反馈 |
+| :---: | :---: |
+| <img src="assets/qr-official-account.jpg" width="240" alt="公众号二维码" /> | <img src="assets/qr-group.png" width="220" alt="交流群二维码" /> |
+
+> 💡 群二维码有时效（7 天），过期后请关注公众号获取最新入群方式。
+
+</div>

@@ -1,3 +1,5 @@
+<div align="right"><a href="README.md">中文</a> | <b>English</b></div>
+
 # visual-review
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -99,6 +101,9 @@ visual-review/
 │   └── cordis.patch.yml.example  # Snippet to append to cordis.patch.yml manually
 ├── examples/
 │   └── test_image.png            # Sample image for testing
+├── assets/
+│   ├── qr-official-account.jpg   # Official-account QR code
+│   └── qr-group.png              # Community group QR code
 ├── package.json                  # Plugin manifest (host + client entries)
 ├── README.md / README.en.md      # 中文 / English docs
 ├── LICENSE                       # MIT
@@ -254,3 +259,19 @@ Check the host log for `/api/session.prompt 拦截路由已注册`. If missing (
 ## License
 
 [MIT](LICENSE) © visual-review authors
+
+---
+
+## Contact
+
+Welcome to follow the official account or join the community group for latest news, feedback, and open-source discussion:
+
+<div align="center">
+
+| Official account · Latest news | Community group · Chat & feedback |
+| :---: | :---: |
+| <img src="assets/qr-official-account.jpg" width="240" alt="Official account QR code" /> | <img src="assets/qr-group.png" width="220" alt="Community group QR code" /> |
+
+> 💡 The group QR code expires after 7 days; follow the official account to get the latest invite link.
+
+</div>
