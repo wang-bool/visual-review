@@ -1,0 +1,29 @@
+{
+  "name": "visual-review",
+  "version": "1.0.0",
+  "description": "DSH 双面插件：在 Web 界面渲染图片，并用视觉多模态模型解读图片（云端优先，本机 Qwen3-VL 兜底）",
+  "type": "module",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "server"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "vision",
+    "image",
+    "visual-review"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "client": {
+      "platform": "web"
+    }
+  }
+}

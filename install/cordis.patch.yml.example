@@ -1,0 +1,5 @@
+# 将本段追加到 $DSH_HOME/profiles/web/cordis.patch.yml（通常为 ~/.dsh/profiles/web/cordis.patch.yml）。
+# 也可以直接运行 install/install.sh 自动完成。
+- insert:
+    - id: visual-review
+      name: 'visual-review'
