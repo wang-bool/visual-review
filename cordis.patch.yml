@@ -1,0 +1,6 @@
+# visual-review 插件安装补丁层（dsh.bundle manifest 指向本文件）
+# 通过 `dsh plugin --profile web add visual-review` 安装后，DSH 启动时会把
+# 下面这条 insert 并入 profile 的 cordis 组合，从而挂载本插件。
+- insert:
+    - id: visual-review
+      name: visual-review
