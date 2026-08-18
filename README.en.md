@@ -104,7 +104,8 @@ visual-review/
 ├── assets/
 │   ├── qr-official-account.jpg   # Official-account QR code
 │   └── qr-group.png              # Community group QR code
-├── package.json                  # Plugin manifest (host + client entries)
+├── cordis.patch.yml              # dsh.bundle install patch (used by `dsh plugin add`)
+├── package.json                  # Plugin manifest (host + client entries, dsh.bundle)
 ├── README.md / README.en.md      # 中文 / English docs
 ├── LICENSE                       # MIT
 └── .gitignore
@@ -119,7 +120,25 @@ visual-review/
 
 ## Installation
 
-### Option A: one-shot script (recommended)
+> Options A/B need no external distribution channel. The plugin declares a `dsh.bundle` manifest (`cordis.patch.yml`), so the official `dsh plugin add` flow works too (**Option C**, recommended).
+
+### Option C: official `dsh plugin add` (recommended)
+
+After the npm release:
+
+```bash
+dsh plugin --profile web add visual-review
+```
+
+Not published yet, or want the latest from source? Install straight from GitHub:
+
+```bash
+dsh plugin --profile web add github:wang-bool/visual-review
+```
+
+Then **restart `dsh web`** and refresh the browser.
+
+### Option A: one-shot script
 
 ```bash
 git clone <this repo> visual-review
