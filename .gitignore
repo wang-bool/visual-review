@@ -22,3 +22,6 @@ Thumbs.db
 # ---- 曝光/PR 提交的临时 staging（不提交） ----
 .pr-staging/
 .npm-cache/
+
+.tmp-npmrc
+.npm-cache-pub/
