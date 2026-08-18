@@ -1,0 +1,14 @@
+# npm 包发布时排除的文件（files 白名单之外的补充保险）
+.git/
+.gitignore
+assets/
+examples/
+install/
+config/
+mode-skin/
+*.md
+.visual_review_tmp/
+__pycache__/
+*.pyc
+*.log
+.DS_Store

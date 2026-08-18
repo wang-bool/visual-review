@@ -1,7 +1,7 @@
 {
   "name": "visual-review",
-  "version": "1.0.0",
-  "description": "DSH 双面插件：在 Web 界面渲染图片，并用视觉多模态模型解读图片（云端优先，本机 Qwen3-VL 兜底）",
+  "version": "1.0.1",
+  "description": "DSH plugin: renders images inline in DeepSeek Harness Web chat and gives text-only models vision — cloud multimodal API first, local Qwen3-VL fallback.",
   "type": "module",
   "exports": {
     ".": "./lib/index.js",
@@ -10,7 +10,8 @@
   },
   "files": [
     "lib",
-    "server"
+    "server",
+    "cordis.patch.yml"
   ],
   "keywords": [
     "dsh",
@@ -18,9 +19,19 @@
     "plugin",
     "vision",
     "image",
+    "multimodal",
     "visual-review"
   ],
   "license": "MIT",
+  "author": "wang-bool",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wang-bool/visual-review.git"
+  },
+  "homepage": "https://github.com/wang-bool/visual-review#readme",
+  "engines": {
+    "node": ">=18"
+  },
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
