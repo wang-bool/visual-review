@@ -101,7 +101,8 @@ visual-review/
 ├── assets/
 │   ├── qr-official-account.jpg   # 公众号二维码
 │   └── qr-group.png              # 交流群二维码
-├── package.json                  # 插件清单（exports host/client 双入口）
+├── cordis.patch.yml              # dsh.bundle 安装补丁层（`dsh plugin add` 用）
+├── package.json                  # 插件清单（exports host/client 双入口 + dsh.bundle manifest）
 ├── README.md / README.en.md      # 中文 / English 文档
 ├── LICENSE                       # MIT
 └── .gitignore
@@ -116,7 +117,25 @@ visual-review/
 
 ## 安装
 
-### 方式 A：一键脚本（推荐）
+> **方式 A / B 无需依赖外部发布渠道**；插件已声明 `dsh.bundle` manifest（`cordis.patch.yml`），因此也支持官方 `dsh plugin add` 安装（**方式 C**，推荐，最简单）。
+
+### 方式 C：官方 `dsh plugin add`（推荐）
+
+npm 发布后：
+
+```bash
+dsh plugin --profile web add visual-review
+```
+
+npm 尚未发布或想装最新版时，可直接从 GitHub 安装：
+
+```bash
+dsh plugin --profile web add github:wang-bool/visual-review
+```
+
+安装后**重启 dsh web** 并刷新浏览器。
+
+### 方式 A：一键脚本
 
 ```bash
 git clone <本仓库> visual-review
