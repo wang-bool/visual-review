@@ -28,10 +28,11 @@ if [ ! -d "$PROFILE_DIR" ]; then
   exit 1
 fi
 
-# 1) 复制插件包（package.json + lib/ + server/）
+# 1) 复制插件包（package.json + cordis.patch.yml + lib/ + server/）
 mkdir -p "$PLUGIN_DIR"
 echo "==> 复制插件到 $PLUGIN_DIR"
 cp "$SRC_DIR/package.json" "$PLUGIN_DIR/package.json"
+cp "$SRC_DIR/cordis.patch.yml" "$PLUGIN_DIR/cordis.patch.yml"
 cp -r "$SRC_DIR/lib" "$PLUGIN_DIR/lib"
 cp -r "$SRC_DIR/server" "$PLUGIN_DIR/server"
 
